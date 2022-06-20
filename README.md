@@ -11,3 +11,11 @@
 
 
 <img src="https://user-images.githubusercontent.com/107848811/174670399-d657f2f6-46b0-4969-8588-66f60453334a.gif" width="90%"></gif>
+
+
+
+<img src="https://user-images.githubusercontent.com/107848811/174670668-a233b2ec-cfd1-49e1-98a9-602092689363.gif" width="90%"></gif>
+
+
+
+<img src="https://user-images.githubusercontent.com/107848811/174670896-25943dd1-32a7-49f7-9652-e0957e2f9940.gif" width="90%"></gif>
