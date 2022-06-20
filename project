@@ -1,0 +1,50 @@
+import network,time
+
+from simple import MQTTClient
+from machine import I2C,Pin,Timer
+from lsm6dsox import LSM6DSOX
+lsm = LSM6DSOX(I2C(0, scl=Pin(13), sda=Pin(12)))
+
+
+step1 = 0
+characters = "-"
+def WIFI_Connect():
+    wlan = network.WLAN(network.STA_IF) 
+    wlan.active(True)                   
+    start_time=time.time()              
+
+    if not wlan.isconnected():
+        print('connecting to network...')
+        wlan.connect('AndroidHotspot9609', 'pa990206') 
+        
+    if wlan.isconnected():
+        print('network information:', wlan.ifconfig())
+        return True    
+
+def MQTT_Send(tim):
+    global step1,q
+    step1=('y:{:>8.3f} '.format(*lsm.read_accel()))
+    
+    for x in range(len(characters)):
+        step1 = step1.replace(characters[x],"")
+    
+    #client.publish(TOPIC,step1)
+    step1=step1[-6:]
+    
+   
+    #q=float(step1)
+    client.publish(TOPIC,step1)
+    print(step1)
+
+if WIFI_Connect():
+    SERVER = '192.168.50.132'   # my rapa ip address , mqtt broker가 실행되고 있음
+    PORT = 1883
+    CLIENT_ID = '' # clinet id 이름
+    TOPIC = 'test' # TOPIC 이름
+    client = MQTTClient(CLIENT_ID, SERVER, keepalive=30)
+    client.connect()
+    
+   
+    tim = Timer(-1)
+    tim.init(period=500, mode=Timer.PERIODIC,callback=MQTT_Send)
+
