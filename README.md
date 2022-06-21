@@ -11,6 +11,8 @@ node red
 
 게이지와 차트
 
+https://www.youtube.com/watch?v=jGUho28B6Tc
+
 <img src="https://user-images.githubusercontent.com/107848811/174670399-d657f2f6-46b0-4969-8588-66f60453334a.gif" width="90%"></gif>
 
 걸을때
