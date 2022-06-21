@@ -1,6 +1,7 @@
 <img src="https://user-images.githubusercontent.com/107848811/174697563-697e4d52-ec3f-4b43-9758-064d7df2aff8.png" width="90%"></img>
 
 블록도 입니다.쏘니는 pc쏘니를 사용하였습니다.
+
 <img src="https://user-images.githubusercontent.com/107848811/174670938-1b6d9400-9a90-4d64-a7df-18148826c65c.png" width="90%"></img>
 
 node red 
