@@ -1,4 +1,4 @@
-<img src="https://user-images.githubusercontent.com/107848811/174697563-697e4d52-ec3f-4b43-9758-064d7df2aff8.png" width="90%"></img>
+<img src="https://user-images.githubusercontent.com/107848811/174736527-1f90bee2-600d-4eb3-84f3-744b0791d9a5.png" width="90%"></img>
 
 블록도 입니다.
 thonny는 pc thonny를 사용하였습니다.
